@@ -29,10 +29,3 @@ translation_chain = LLMChain(llm=llm, prompt=prompt_template)
 async def translate_text(input: TextInput):
     translation = translation_chain.run(input.text)
     return {"input": input.text, "translation": translation}
-
-'''
-Executar com:
-curl -X POST "http://127.0.0.1:8000/translate_huggingface/"
--H "Content-Type: application/json"
--d '{"text": "Hello, how are you?"}'
-'''

@@ -8,6 +8,7 @@ Este aplicativo usa o modelo `Helsinki-NLP/opus-mt-en-de` integrado com LangChai
 ```bash
 pip install -r requirements.txt
 ```
+3. Instalar Pytorch: https://pytorch.org/get-started/locally/
 
 **Como Executar**: Inicie o servidor FastAPI com o comando:
 ```bash
